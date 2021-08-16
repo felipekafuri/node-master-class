@@ -8,7 +8,8 @@ environments.staging = {
   'httpPort': 3333,
   'httpsPort': 3331,
   'envName': 'staging',
-  'hashingSecret': 'superSecretHash'
+  'hashingSecret': 'superSecretHash',
+  'maxChecks': 5
 };
 
 // Production objects
@@ -16,7 +17,8 @@ environments.production = {
   'httpPort': 4333,
   'httpsPort': 4334,
   'envName': 'production',
-  'hashingSecret': 'superSecretHash'
+  'hashingSecret': 'superSecretHash',
+  'maxChecks': 5
 };
 
 // Determine witch environment was passed on the command line 
