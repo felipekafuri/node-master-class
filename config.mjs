@@ -9,7 +9,12 @@ environments.staging = {
   'httpsPort': 3331,
   'envName': 'staging',
   'hashingSecret': 'superSecretHash',
-  'maxChecks': 5
+  'maxChecks': 5,
+  'twilio':{
+    'username': 'felipekafuri',
+    'password': 'FelipeKafuri1',
+    'fromPhone': 'InfoSMS',
+  }
 };
 
 // Production objects
@@ -18,7 +23,12 @@ environments.production = {
   'httpsPort': 4334,
   'envName': 'production',
   'hashingSecret': 'superSecretHash',
-  'maxChecks': 5
+  'maxChecks': 5,
+  'twilio':{
+    'accountSid': 'aab9c3695663f6558dea50f6952f430e-80a37ff4-6159-416b-8054-5c98af41ae34',
+    'authToken': 'App aab9c3695663f6558dea50f6952f430e-80a37ff4-6159-416b-8054-5c98af41ae34',
+    'fromPhone': '+5562992944121',
+  }
 };
 
 // Determine witch environment was passed on the command line 
